@@ -1,6 +1,7 @@
 package com.valorant.agents
 
 import com.valorant.arsenal.Arsenal
+import java.time.LocalDateTime
 import java.util.Date
 
 interface Agent {
@@ -9,16 +10,16 @@ interface Agent {
 
     val agentFunction: String
 
-    val createdAt: Date
+    val createdAt: LocalDateTime
 
     val biography: String
 
-    var currentGun: Arsenal
+    var currentGun: String
 
     companion object {
 
         // default properties to inheritance
-        const val size: Double = 1.85
+        const val height: Double = 1.85
         const val health: Double = 100.0
         const val numberOfSkills: Int = 4
 
