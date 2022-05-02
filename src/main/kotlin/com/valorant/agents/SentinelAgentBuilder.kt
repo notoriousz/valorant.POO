@@ -8,7 +8,7 @@ class SentinelAgentBuilder(
     override val agentRole: String,
     override val createdAt: LocalDateTime,
     override val biography: String,
-    override var currentGun: Arsenal
+    override var currentGun: MutableList<Arsenal>
 ) : Agent {
 
     // default properties

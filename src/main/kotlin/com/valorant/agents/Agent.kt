@@ -13,7 +13,7 @@ interface Agent {
 
     val biography: String
 
-    var currentGun: Arsenal
+    var currentGun: MutableList<Arsenal>
 
     companion object {
 
