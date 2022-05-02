@@ -2,30 +2,29 @@ package com.valorant.agents
 
 import com.valorant.arsenal.Arsenal
 import java.time.LocalDateTime
-import java.util.Date
 
 interface Agent {
 
     val nameOfAgent: String
 
-    val agentFunction: String
+    val agentRole: String
 
     val createdAt: LocalDateTime
 
     val biography: String
 
-    var currentGun: String
+    var currentGun: Arsenal
 
     companion object {
 
-        // default properties to inheritance
+        // default properties
         const val height: Double = 1.85
         const val health: Double = 100.0
         const val numberOfSkills: Int = 4
 
     }
 
-    // default methods to inheritance
+    // default methods
     fun shoot(): String {
         return "pull the trigger"
     }
@@ -55,12 +54,12 @@ interface Agent {
     }
 
     // polymorphism
-    fun executeSkillOne() {}
+    fun executeSkillOne(): String
 
-    fun executeSkillTwo() {}
+    fun executeSkillTwo(): String
 
-    fun executeSkillThree() {}
+    fun executeSkillThree(): String
 
-    fun executeSkillUltimate() {}
+    fun executeSkillUltimate(): String
 
 }

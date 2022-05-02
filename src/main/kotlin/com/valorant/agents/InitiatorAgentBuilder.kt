@@ -1,13 +1,14 @@
 package com.valorant.agents
 
+import com.valorant.arsenal.Arsenal
 import java.time.LocalDateTime
 
 class InitiatorAgentBuilder(
-    // constructor
     override val nameOfAgent: String,
-    override val agentFunction: String,
+    override val agentRole: String,
+    override val createdAt: LocalDateTime = LocalDateTime.now(),
     override val biography: String,
-    override var currentGun: String
+    override var currentGun: Arsenal
 ) : Agent {
 
     // default properties
@@ -15,6 +16,20 @@ class InitiatorAgentBuilder(
     private val agentHealth: Double = Agent.health
     private val numberOfSkills: Int = Agent.numberOfSkills
 
-    override val createdAt: LocalDateTime = LocalDateTime.now()
+    override fun executeSkillOne(): String {
+        return "Shock Arrow"
+    }
+
+    override fun executeSkillTwo(): String {
+        return "Tracking Arrow"
+    }
+
+    override fun executeSkillThree(): String {
+        return "Drone Owl"
+    }
+
+    override fun executeSkillUltimate(): String {
+        return "hunter's fury"
+    }
 
 }
