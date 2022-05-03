@@ -1,5 +1,13 @@
-# POO Study
+# Valorant POO Min Project
 
-### Diagram
+## What is it
 
-![ArsenalSVGs](https://user-images.githubusercontent.com/64628014/166392250-294a0af5-504d-4f72-b355-7341fd36cb43.png)
+- This is a sample project to learn and use conceps about POO with Kotlin using the Valorant Game as abstraction;
+
+## Diagram's
+
+### Agents
+![AgentssPNG](https://user-images.githubusercontent.com/64628014/166401642-a0855e86-b904-4371-a043-f0f99c10b9e7.png)
+
+### Arsenal
+![ArsenallsPNG](https://user-images.githubusercontent.com/64628014/166401659-8077690b-0e97-466a-aa80-1833cb19acad.png)
