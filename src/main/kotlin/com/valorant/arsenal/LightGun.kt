@@ -11,15 +11,12 @@ class LightGun(
 
     override val precision: Double = 0.5
 
-    override val hasScope: Boolean = false
-
     override val weight: String = "heavy"
 
     override val recoil: Double = 0.2
 
     override val numberOfProjectiles: Int = 26
 
-
-
+    override fun zoomScope(hasScope: Boolean): String = "This gun does not have scope"
 
 }

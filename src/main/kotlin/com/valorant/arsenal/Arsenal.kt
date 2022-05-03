@@ -7,15 +7,14 @@ interface Arsenal {
     val size: Double
     val damage: Int
     val precision: Double
-    val hasScope: Boolean
     val weight: String
     val recoil: Double
     val numberOfProjectiles: Int
 
 
-    fun zoomScope(hasScope: Boolean) = when(hasScope) {
-            true -> println("Open Scope")
-            else -> println("This gun does not have scope")
+    fun zoomScope(hasScope: Boolean = true): String = when(hasScope) {
+            true -> "Open Scope"
+            else -> "This gun does not have scope"
         }
 
     fun closeZoomScope() {
