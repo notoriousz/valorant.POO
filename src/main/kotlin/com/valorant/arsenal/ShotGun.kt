@@ -5,16 +5,16 @@ class ShotGun(
     override val description: String
 ) : Arsenal {
 
-    override val numberOfProjectiles: Int = 30
+    override val numberOfProjectiles: Int = 40
 
     override val damage: Int = 150
 
     override val weight: String = "heavy"
 
-    override val recoil: Double = 0.8
+    override val recoil: Double = 0.7
 
-    override val size: Double = 70.0
+    override val size: Double = 75.0
 
-    override val precision: Double = 0.9
+    override val precision: Double = 0.6
 
 }
