@@ -1,6 +1,6 @@
 package com.valorant.arsenal
 
-class LightGun(
+class LightGunBuilder(
     override val name: String,
     override val description: String
     ) : Arsenal {
