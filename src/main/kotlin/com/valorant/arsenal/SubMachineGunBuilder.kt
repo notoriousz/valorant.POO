@@ -7,7 +7,7 @@ class SubMachineGunBuilder(
 
     override val numberOfProjectiles: Int = 20
 
-    override val damage: Int = 150
+    override val damage: Int = 60
 
     override val weight: String = "medium heavy"
 
@@ -16,5 +16,7 @@ class SubMachineGunBuilder(
     override val size: Double = 50.0
 
     override val precision: Double = 0.5
+
+    override fun zoomScope(hasScope: Boolean): String = "This gun does not have scope"
 
 }
