@@ -6,10 +6,11 @@ import java.time.LocalDateTime
 class SentinelAgentBuilder(
     override val nameOfAgent: String,
     override val agentRole: String,
-    override val createdAt: LocalDateTime,
     override val biography: String,
-    override var currentGun: MutableList<Arsenal>
+    override var guns: MutableList<String>
 ) : Agent {
+
+    override val createdAt: LocalDateTime = LocalDateTime.now()
 
     // default properties
     private val agentHeight: Double = Agent.height

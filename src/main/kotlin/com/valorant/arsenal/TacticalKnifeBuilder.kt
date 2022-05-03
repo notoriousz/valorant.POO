@@ -1,18 +1,18 @@
 package com.valorant.arsenal
 
 
-abstract class TacticalKnifeBuilder(
-    override val name: String,
-    override val description: String,
-    override val weight: String
-) : Arsenal {
+class TacticalKnifeBuilder(
+    val name: String,
+    val description: String,
+    val weight: String
+) {
 
-    override val size: Double
+    val size: Double
         get() = 50.0
 
-    override val damage: Int
+    val damage: Int
         get() = 150
 
-    override val precision: Double
+    val precision: Double
         get() = 1.0
 }
