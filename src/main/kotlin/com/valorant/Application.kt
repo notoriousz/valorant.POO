@@ -1,15 +1,13 @@
 package com.valorant
 
-import com.valorant.arsenal.LightGun
-import com.valorant.arsenal.SubMachineGunBuilder
+import com.valorant.arsenal.*
+import com.valorant.agents.*
 
 class Application {
-
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
-            val test1 = SubMachineGunBuilder("oi", "oi").zoomScope()
-            println(test1)
+
         }
     }
 }
