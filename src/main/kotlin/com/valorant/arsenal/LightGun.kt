@@ -11,7 +11,7 @@ class LightGun(
 
     override val precision: Double = 0.5
 
-    override val weight: String = "heavy"
+    override val weight: String = "light"
 
     override val recoil: Double = 0.2
 
