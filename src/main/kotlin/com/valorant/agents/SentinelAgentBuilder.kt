@@ -3,7 +3,7 @@ package com.valorant.agents
 import com.valorant.arsenal.Arsenal
 import java.time.LocalDateTime
 
-class SentinelAgentBuilder(
+data class SentinelAgentBuilder(
     override val nameOfAgent: String,
     override val agentRole: String,
     override val biography: String,

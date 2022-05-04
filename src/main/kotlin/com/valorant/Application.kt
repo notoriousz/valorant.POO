@@ -59,7 +59,10 @@ class Application {
 
         @JvmStatic
         fun main(args: Array<String>) {
-            println()
+            println(cypher)
+            println(sova)
+            println(reyna)
+            println(omen)
         }
     }
 

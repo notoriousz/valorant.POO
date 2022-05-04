@@ -4,7 +4,7 @@ import com.valorant.arsenal.Arsenal
 import com.valorant.arsenal.LightGunBuilder
 import java.time.LocalDateTime
 
-class ControllerAgentBuilder(
+data class ControllerAgentBuilder(
     override val nameOfAgent: String,
     override val agentRole: String,
     override val biography: String,
